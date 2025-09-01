@@ -84,6 +84,7 @@ jobs:
 
       - name: Prepare and run Coverity build
         run: |
+          source /opt/intel/oneapi/setvars.sh
           export PATH="${PWD}/cov-linux64-tool/bin:${PATH}"
           cov-configure --template --compiler icpx --comptype intel_icpx:linux
           export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${GITHUB_WORKSPACE}/lapack/install/lib
