@@ -22,8 +22,7 @@ name: Coverity Scan
 on:
   # Only run on push to main branch
   push:
-    branches: [dev/vyevtyus/coverity_enabling_fixes]
-  workflow_dispatch:
+    branches: [dev/vyevtyuys/coverity_enabling_fixes]
 
 permissions: read-all
 
